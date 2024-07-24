@@ -1,0 +1,207 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #0b131e;
+    display: flex;
+    margin: 0;
+}
+
+.nav-bar, .seven-day-forecast, .today {
+    margin: 0.5%;
+    height: 100vh;
+}
+.nav-bar, .search, .air-condition, .seven-day-forecast, .forecast{
+    border-radius: 20px;
+    background-color:#202b3b;
+}
+                    /******* The Nav Bar ********/
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 4%;
+    padding: 20px;
+
+}
+.nav-bar span {
+    height: 50%;
+}
+.logo {
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 25px;
+    
+}
+.nav-btn {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1;
+    border: 0;
+    background-color: transparent;
+}
+
+                    /******* The Nav Bar End ********/
+
+                    /******* The search bar ********/
+.search {
+    padding: 10px;
+}
+.search-field {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+}
+.results {
+    z-index: 1;
+    position: absolute;
+    background-color: #202b3b85;
+    padding: 20px;
+    border-radius: 15px;
+}
+                    /******* The search bar end ********/
+
+
+
+                    /******* The Today weather ********/
+.today {
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.air-condition, .forecast, .weather-now {
+    display: flex;
+    flex-grow: 1;
+
+}
+.weather-now {
+    background-color: transparent;
+    justify-content: space-between;
+
+}
+
+                    /******* The Today weather End ********/
+
+                    /******* The forcast ********/
+.forecast {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    max-height: 20%;
+
+}
+.cast-items {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.castitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+
+                /******* The forcast end********/
+
+
+                    /******* The Air condition ********/
+.air-condition {
+    margin: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+} 
+
+.condition {
+    width: 50%;
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+                    /******* The Air condition end ********/
+
+                    /******* Seven Days weather ********/
+.seven-day-forecast {
+    height: 100vh;
+    flex-grow: 1;
+}
+.daycast {
+    height: 3%;
+    display: flex;
+    justify-content:center
+}
+
+                    /******* The cities cast ********/
+.cities-cast {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0.5%;
+    border-radius: 20px;
+    background-color: #0b131e;
+}
+.city-cast {
+    display: flex;
+    background-color: #202b3b;
+    height: 20%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+                    /******* The cities cast end ********/
+
+
+                    /******* settings ********/
+.filter {
+    background-color:#202b3b;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.units {
+    background-color: #0b131e;
+    padding: 1px;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+.imperial-btn{
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.metric-btn {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+.kelvin-btn {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+                    /******* settings end ********/
